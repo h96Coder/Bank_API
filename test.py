@@ -18,6 +18,7 @@ def getcontact(contact):
     data=json.dumps(data)
     response=requests.get(Base_Url+endpoint,data=data)
     print(json.dumps(response.json(),indent=4))
+
 #getcontact("cellular")
 
 '''2. Use "day" and "month" column values and find records which are after 15th October'''

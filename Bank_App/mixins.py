@@ -28,7 +28,7 @@ class BankCRUDMixin():
             return self.http_response(json.dumps({"msg": "invalid format"}), status=404)
         json_data = json.loads(data)
 
-        return dict, json_data
+        return json_data
 
     def valid_json(self, data):
         try:
@@ -47,5 +47,12 @@ class BankCRUDMixin():
 
         date = datetime.date(year=datetime.datetime.today().year, day=int(day), month=month)
         return date
+
+    def sheetorcsv(self,json_data,csv_reader,sheetreader):
+        flag=json_data['sheet']
+        if flag:
+            return sheetreader
+        return csv_reader
+
 
 # class HttpResponseMixin():

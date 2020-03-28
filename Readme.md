@@ -1,5 +1,9 @@
 # BankAPI
-* Place the creds.json(Google Api Json file ) file in project csv folder.
+* Place the creds.json(Google Sheet Api Json file ) file in project csvfile/  folder.
+  Follow below link for your reference.
+  ```
+     https://developers.google.com/sheets/api/quickstart/python
+  ```
 * Run requirement.txt file.
 
 * To start the server use command 

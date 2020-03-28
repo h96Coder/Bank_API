@@ -1,5 +1,4 @@
 import os
-import csv
 from googleapiclient.discovery import build
 from oauth2client.service_account import ServiceAccountCredentials
 import gspread
